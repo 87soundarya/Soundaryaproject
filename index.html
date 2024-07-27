@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iddya Sri Mahalingeshwara Temple</title>
+    <style>
+        body {
+            background-color: #caf0f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #d75052;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #333 3px solid;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a:hover {
+            color: #f1f1f1;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #9e2a2b;
+        }
+
+        h1 {
+            animation: colorChange 5s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { color: #9e2a2b; }
+            50% { color: #ff6f61; }
+            100% { color: #9e2a2b; }
+        }
+
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group input {
+            margin: 5px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .form-group input[type="submit"] {
+            background: #9e2a2b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background: #ff6f61;
+        }
+
+        @media (max-width: 768px) {
+            .img-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            iframe {
+                height: 300px;
+            }
+        }
+
+        /* Navigation active section highlight */
+        .nav-active {
+            border-bottom: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Iddya Sri Mahalingeshwara Temple in Surathkal, Mangalore</h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <a href="#Home" class="nav-link">Introduction</a>
+            <a href="#About" class="nav-link">About Temple</a>
+            <a href="#place" class="nav-link">Location</a>
+            <a href="#contactUs" class="nav-link">Contact</a>
+        </nav>
+
+        <div id="Home" class="section">
+            <h2>Iddya Sri Mahalingeshwara Temple</h2>
+            <div class="img-container">
+                <img src="temple1.jpeg" alt="Temple">
+                <img src="temple2.jpeg" alt="Temple">
+                <img src="shiva1.jpeg" alt="Shiva">
+            </div>
+        </div>
+
+        <div id="About" class="section">
+            <h2>About Temple</h2>
+            <p>A temple (from the Latin templum) is a place of worship, a building used for spiritual rituals and activities such as prayer and sacrifice. By convention, the specially built places of worship of some religions are commonly called "temple" in English, while those of other religions are not, even though they fulfill very similar functions. The religions for which the terms are used include the great majority of ancient religions that are now extinct, such as the Ancient Egyptian religion and the Ancient Greek religion. Among religions still active: Hinduism (whose temples are called Mandir or Kovil), Buddhism (whose temples are called Vihar), Sikhism (whose temples are called gurudwara), Jainism (whose temples are sometimes called derasar), Zoroastrianism (whose temples are sometimes called Agiary), the Baha'i Faith (which are often simply referred to as Baha'i House of Worship), Taoism (which are sometimes called Daoguan), Shinto (which are sometimes called Jinja), Confucianism (which are sometimes called the Temple of Confucius). A Hindu temple is a symbolic house, the seat and dwelling of Hindu gods. It is a structure designed to bring human beings and gods together according to Hindu faith. Inside its garbhagriha innermost sanctum, a Hindu temple contains a murti or Hindu go.</p>
+            <p>Temples are large and magnificent with a rich history. There is evidence of the use of sacred ground as far back as the Bronze Age and later during the Indus Valley civilization. Outside of the Indian subcontinent (India, Bangladesh and Nepal), Hindu temples have been built in various countries around the world. Either following the historic diffusion of Hinduism across Asia (e.g. ancient stone temples of Cambodia and Indonesia), or following the migration of the Indian Hindus' diaspora, to Western Europe (esp. Great Britain), North America (the United States and Canada), as well as Australia, Malaysia and Singapore, Mauritius and South Africa.</p>
+        </div>
+
+        <div id="place" class="section">
+            <h2>Location of Temple</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62207.312879249184!2d74.76240510652622!3d12.974598619733198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba351ed766a24b1%3A0x95f03077ad51850b!2sIddya%20Sri%20Mahalingeshwara%20Temple!5e0!3m2!1sen!2sin!4v1720595578776!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div id="contactUs" class="section">
+            <h2>Contact Information</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name">
+                <label for="phno">Phone Number:</label>
+                <input type="text" id="phno" placeholder="Enter Phone Number">
+                <label for="place">Place:</label>
+                <input type="text" id="place" placeholder="Enter Place">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll animation
+        const sections = document.querySelectorAll('.section');
+        const options = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Highlight active nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sectionsMap = {};
+        sections.forEach(section => {
+            sectionsMap[section.id] = section.offsetTop;
+        });
+
+        window.addEventListener('scroll', () => {
+            let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+            for (let id in sectionsMap) {
+                if (sectionsMap[id] <= scrollPosition + 100) {
+                    document.querySelector('.nav-active')?.classList.remove('nav-active');
+                    document.querySelector(`a[href*=${id}]`).classList.add('nav-active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
